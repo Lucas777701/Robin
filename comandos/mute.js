@@ -2,14 +2,16 @@
 const Discord = require('discord.js');
 
 module.exports.run = async (Robin, message , args) => {
-
-if(!message.member.hasPermissions("MANAGE_ROLES")) return message.channel.send(`\`${message.author.username}\`, Sem permissão!`);   
-
+var nomeeapelido = message.guild.member(message.author.id).nickname || message.author.username
+if(!message.member.hasPermissions("MANAGE_ROLES")) return message.channel.send(`\`${nomeeapelido}\`, Sem permissão!`);   
+  
+if(!message.guild.me.hasPermissions("MANAGE_ROLES")) return message.channel.send(`\`${nomeeapelido}\`, Eu não tenho as permissões necessarias para isto.`);
+  
 let usuario = message.mentions.users.first();
-if(!usuario) return message.channel.send(`\`${message.author.username}\`, Você esqueçeu de **mencionar** o membro que deseja mutar!`);
+if(!usuario) return message.channel.send(`\`${nomeeapelido}\`, Você esqueçeu de **mencionar** o membro que deseja mutar!`);
 
 let razao = args.slice(1).join(" ")
-if(!razao) return message.channel.send(`\`${message.author.username}\`, Você se esqueceu de colocar a **razão**!`);
+if(!razao) return message.channel.send(`\`${nomeeapelido}\`, Você se esqueceu de colocar a **razão**!`);
 
 let muterole = message.guild.roles.find(c => c.name === "MUTED")
 if(!muterole){
@@ -34,7 +36,7 @@ if(!muterole){
 
 
 message.guild.member(usuario).addRole(muterole);
-return message.channel.send(`\`${message.author.username}\`, o usuario **${usuario.username}** foi mutado com sucesso!`);
+return message.channel.send(`\`${nomeeapelido}\`, o usuario **${usuario.username}** foi mutado com sucesso!`);
 
 }
 
