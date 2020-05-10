@@ -18,6 +18,12 @@
     {"id":6, "name":"ZET Hits", "url":"http://zethit-01.cdn.eurozet.pl:8428/","pais":"EUA"},
     {"id":7, "name":"ZET Hot", "url":"http://zet.cdn.eurozet.pl/ZETHOT.mp3","pais":"EUA"},
     {"id":8, "name":"ZET Gold", "url":"http://zgl.cdn.eurozet.pl/ZGLHIT.mp3","pais":"EUA"},
-    {"id":10, "name":"I Love", "url":"http://stream01.iloveradio.de/iloveradio1.mp3","pais":"EUA"}
+    {"id":9, "name":"I Love", "url":"http://stream01.iloveradio.de/iloveradio1.mp3","pais":"EUA"}
+    {"id":10,"name":"Alles Radio","url":"http://stream.laut.fm/alles-radio","pais":"EUA"}
+    {"id":11,"name":"Alles Chill","url":"http://stream.laut.fm/alles-chill","pais":"EUA"}
+    {"id":12,"name":"Alles Dance","url":"http://stream.laut.fm/alles-dance","pais":"EUA"}
+    {"id":13,"name":"Alles Techno","url":"http://stream.laut.fm/alles-techno","pais":"EUA"}
+    {"id":14,"name":"Alles Hardstyle","url":"http://stream.laut.fm/alles-hardstyle","pais":"EUA"}
+    {"id":15,"name":"Alles Klub","url":"http://stream.laut.fm/alles-klub","pais":"EUA"}
 
 ]
